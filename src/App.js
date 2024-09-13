@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 function App() {
   return (
@@ -40,8 +41,100 @@ function App() {
         </nav>
       </header>
       <div className="content">
-        <nav className="sidebar">Navigation</nav>
-        <main className="hotel-view">Hotel view</main>
+        <nav className="sidebar">
+          <ul className="side-nav">
+            <li className="side-nav__item side-nav__item--active">
+              <a href="#" className="side-nav__link">
+                <svg className="side-nav__icon">
+                  <use href="sprite.svg#icon-home"></use>
+                </svg>
+                <span>Hotel</span>
+              </a>
+            </li>
+            <li className="side-nav__item">
+              <a href="#" className="side-nav__link">
+                <svg className="side-nav__icon">
+                  <use href="sprite.svg#icon-aircraft-take-off"></use>
+                </svg>
+                <span>Flight</span>
+              </a>
+            </li>
+            <li className="side-nav__item">
+              <a href="#" className="side-nav__link">
+                <svg className="side-nav__icon">
+                  <use href="sprite.svg#icon-key"></use>
+                </svg>
+                <span>Car rental</span>
+              </a>
+            </li>
+            <li className="side-nav__item">
+              <a href="#" className="side-nav__link">
+                <svg className="side-nav__icon">
+                  <use href="sprite.svg#icon-map"></use>
+                </svg>
+                <span>Tours</span>
+              </a>
+            </li>
+          </ul>
+          <div className="legal">
+            &copy; 2024 by trillo, All rights reserved.
+          </div>
+        </nav>
+        <main className="hotel-view">
+          <div className="gallery">
+            <figure className="gallery__item">
+              <img
+                alt="photo of hotel 1"
+                src="hotel-1.jpg"
+                className="gallery__photo"
+              />
+            </figure>
+            <figure className="gallery__item">
+              <img
+                alt="photo of hotel 2"
+                src="hotel-2.jpg"
+                className="gallery__photo"
+              />
+            </figure>
+            <figure className="gallery__item">
+              <img
+                alt="photo of hotel 3"
+                src="hotel-3.jpg"
+                className="gallery__photo"
+              />
+            </figure>
+          </div>
+          <div className="overview">
+            <h1 className="overview__heading">The Lala Palace</h1>
+            <div className="overview__stars">
+              <svg className="overview__icon-star">
+                <use href="sprite.svg#icon-star"></use>
+              </svg>
+              <svg className="overview__icon-star">
+                <use href="sprite.svg#icon-star"></use>
+              </svg>
+              <svg className="overview__icon-star">
+                <use href="sprite.svg#icon-star"></use>
+              </svg>
+              <svg className="overview__icon-star">
+                <use href="sprite.svg#icon-star"></use>
+              </svg>
+              <svg className="overview__icon-star">
+                <use href="sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+            <div className="overview__location">
+              <svg className="overview__icon-location">
+                <use href="sprite.svg#icon-location-pin"></use>
+              </svg>
+              <button className="btn-inline">Chennai, TamilNadu</button>
+            </div>
+            <div className="overview__rating">
+              <div className="overview__rating-average">8.6</div>
+              <div className="overview__rating-count">429 votes</div>
+            </div>
+          </div>
+        </main>
       </div>
     </div>
   );

@@ -190,9 +190,58 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="user-reviews">User Reviews</div>
+            <div className="user-reviews">
+              <figure className="review">
+                <blockquote className="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi, totam, itaque officia ex.
+                </blockquote>
+                <figcaption className="review__user">
+                  <img
+                    src="user-1.jpg"
+                    alt="User 1"
+                    className="review__photo"
+                  />
+                  <div className="review__user-box">
+                    <p className="review__user-name">Surya Kumar D</p>
+                    <p className="review__user-date">Sep 14th, 2024</p>
+                  </div>
+                  <div className="review__user-rating">7.8</div>
+                </figcaption>
+              </figure>
+              <figure className="review">
+                <blockquote className="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi.
+                </blockquote>
+                <figcaption className="review__user">
+                  <img
+                    src="user-2.jpg"
+                    alt="User 2"
+                    className="review__photo"
+                  />
+                  <div className="review__user-box">
+                    <p className="review__user-name">Naresh Kumar</p>
+                    <p className="review__user-date">Sep 13th, 2024</p>
+                  </div>
+                  <div className="review__user-rating">9.9</div>
+                </figcaption>
+              </figure>
+              <button className="btn-inline">
+                Show all <span>&rarr;</span>
+              </button>
+            </div>
           </div>
         </main>
+      </div>
+      <div className="cta">
+        <h2 className="cta__book-now">
+          Good news! We have 4 free rooms for your selected dates!
+        </h2>
+        <button className="btn">
+          <span className="btn__visible">Book now</span>
+          <span className="btn__invisible">Only 4 rooms left</span>
+        </button>
       </div>
     </div>
   );
